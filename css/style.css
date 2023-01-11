@@ -192,6 +192,26 @@ html {
 
 }
 
+/*mail-card*/
+
+.list-mail {
+    display: flex;
+
+}
+
+.image-mail {
+    fill: var(--sekondary-text-color);
+    left: 65.75%;
+    right: 33.25%;
+    top: 1.16%;
+}
+
+/*number-card*/
+
+.image-number {
+    fill: var(--sekondary-text-color);
+}
+
 .contacts-link {
 
     padding-left: 0;
@@ -233,19 +253,33 @@ html {
 
 /* Герой */
 .hero-section {
+
     padding-top: 200px;
     padding-bottom: 280px;
-
     text-align: center;
 
     height: 600px;
     left: 0px;
     top: 80px;
 
-
     color: var(--section-backghround-color);
     background: var(--footer-color);
 }
+
+/* Герой */
+
+.hero-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/Header_1.jpg);
+}
+
 
 .hero-title {
 
@@ -289,7 +323,7 @@ html {
 .section {
 
     padding-top: 94px;
-    padding-bottom: 94px;
+    /* padding-bottom: 94px; */
 
     font-family: 'Roboto';
     font-size: 14px;
@@ -319,16 +353,20 @@ html {
     margin: 0;
 }
 
-.other {
-    width: 270px;
+.image-icon {
+    fill: var(--secondary-backghround-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+
 }
+
 
 .other:nth-last-child(-n+3) {
     margin-left: 30px;
 }
 
 .headline {
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 10px;
 
 
