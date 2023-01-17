@@ -8,6 +8,7 @@
     --secondary-backghround-color: #F5F4FA;
     --footer-color: #2F303A;
     --button-background-color: #F5F4FA;
+    --feature-list-icon: #AFB1B8;
 }
 
 ul {
@@ -115,8 +116,6 @@ html {
 }
 
 
-.page-haeder {}
-
 /* Header-container */
 .header-container {
     padding-top: 24px;
@@ -183,11 +182,13 @@ html {
 /* Контакти */
 .list-contacts {
     display: flex;
+
     gap: 50px;
 
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 344px;
+    margin: auto;
     padding: 0;
 
 }
@@ -196,10 +197,11 @@ html {
 
 .list-mail {
     display: flex;
-
+    align-items: center;
 }
 
 .image-mail {
+    margin-right: 10px;
     fill: var(--sekondary-text-color);
     left: 65.75%;
     right: 33.25%;
@@ -208,7 +210,13 @@ html {
 
 /*number-card*/
 
+.list-number {
+    display: flex;
+    align-items: center;
+}
+
 .image-number {
+    margin-right: 10px;
     fill: var(--sekondary-text-color);
 }
 
@@ -246,8 +254,6 @@ html {
 
 
 /* Шапка */
-
-.container-item {}
 
 /*Ефективні рішення для вашого бізнесу*/
 
@@ -323,7 +329,7 @@ html {
 .section {
 
     padding-top: 94px;
-    /* padding-bottom: 94px; */
+    padding-bottom: 94px;
 
     font-family: 'Roboto';
     font-size: 14px;
@@ -334,7 +340,7 @@ html {
 
 .subtitle {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 
     color: var(--sekondary-text-color);
     font-family: 'Roboto';
@@ -352,6 +358,12 @@ html {
     padding-left: 0;
     margin: 0;
 }
+
+.image-mail:hover,
+.image-mail:focus {
+    fill: var(--blue-color);
+}
+
 
 .image-icon {
     fill: var(--secondary-backghround-color);
@@ -460,6 +472,17 @@ html {
 
 
 /* Наша команда */
+
+.feature-list-icon {
+    fill: var(--feature-list-icon);
+
+
+}
+
+.feature-icon {
+    width: 44px;
+    height: 44px;
+}
 
 .subject>.item {
     display: flex;
