@@ -16,6 +16,12 @@ ul {
 
 }
 
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -200,6 +206,12 @@ html {
     align-items: center;
 }
 
+.image-mail:hover,
+.image-mail:focus {
+    fill: var(--blue-color);
+    cursor: pointer;
+}
+
 .image-mail {
     margin-right: 10px;
     fill: var(--sekondary-text-color);
@@ -359,12 +371,6 @@ html {
     margin: 0;
 }
 
-.image-mail:hover,
-.image-mail:focus {
-    fill: var(--blue-color);
-}
-
-
 .image-icon {
     fill: var(--secondary-backghround-color);
     background: #F5F4FA;
@@ -484,13 +490,14 @@ html {
     height: 44px;
 }
 
-.subject>.item {
+.list-subject {
     display: flex;
+    text-align: center;
+    margin-left: 30px;
 }
 
 .section-leader {
     text-align: center;
-
     margin-left: 30px;
 
 }
