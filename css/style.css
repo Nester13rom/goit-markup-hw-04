@@ -2,7 +2,6 @@
     --primery-text-color: #212121;
     --sekondary-text-color: #757575;
     --page-color: #F5F5F5;
-    ;
     --blue-color: #2196F3;
     --section-backghround-color: #FFFFFF;
     --secondary-backghround-color: #F5F4FA;
@@ -479,12 +478,6 @@ html {
 
 /* Наша команда */
 
-.feature-list-icon {
-    fill: var(--feature-list-icon);
-
-
-}
-
 .feature-icon {
     width: 44px;
     height: 44px;
@@ -535,6 +528,96 @@ html {
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
+
+/* НАША КОМАНДА */
+
+.socials-list {
+    display: flex;
+
+}
+
+.socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--section-backghround-color);
+    fill: var(--feature-list-icon);
+}
+
+.socials-link:last-child {
+    margin-right: 0px;
+}
+
+.socials-link:hover {
+    background-color: var(--blue-color);
+    fill: var(--section-backghround-color);
+}
+
+/* Постійні клієнти */
+
+.section-bg {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-family: 'Roboto';
+    color: var(--primery-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.avatar {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+
+.thumb:hover,
+.thumb:focus {
+    cursor: pointer;
+    fill: var(--section-backghround-color);
+    border: 1px solid var(--blue-color);
+}
+
+.brend-icon:hover {
+    fill: var(--blue-color);
+}
+
+.thumb:first-child {
+    margin-left: 0px;
+}
+
+.thumb {
+    margin-left: 30px;
+    border: 1px solid var(--feature-list-icon);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    background: var(--page-color);
+}
+
+.thumb:hover {
+    fill: var(--blue-color);
+}
+
+.thumbnail:hover,
+.thumbnail:focus {
+    fill: var(--blue-color);
+
+}
+
+.thumbnail {
+    margin: 16px 32px;
+    fill: var(--feature-list-icon);
+}
+
 
 /* підвал*/
 
@@ -587,6 +670,14 @@ html {
 
 
     background-color: var(--footer-color);
+}
+
+/*footer icon*/
+.social-media {
+    display: flex;
+    justify-content: center;
+    fill: var(--section-backghround-color);
+    color: var(--section-backghround-color);
 }
 
 
