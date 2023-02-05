@@ -12,7 +12,8 @@
 
 ul {
     list-style: none;
-
+    padding: 0px;
+    margin: 0px;
 }
 
 .list {
@@ -623,6 +624,7 @@ html {
 
 .web-footer {
     padding-left: 0;
+    margin-right: 70px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -673,13 +675,29 @@ html {
 }
 
 /*footer icon*/
+
+
+
 .social-media {
-    display: flex;
-    justify-content: center;
+
     fill: var(--section-backghround-color);
     color: var(--section-backghround-color);
 }
 
+.media-social {
+    display: flex;
+    align-items: baseline;
+}
+
+.media {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
 
 .social-list {
     display: flex;
@@ -693,6 +711,7 @@ html {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .social-link-icon:hover,
