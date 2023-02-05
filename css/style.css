@@ -665,10 +665,10 @@ html {
 }
 
 .footer {
+    display: flex;
+    align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
-
-
     background-color: var(--footer-color);
 }
 
@@ -681,9 +681,29 @@ html {
 }
 
 
+.social-list {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-link-icon:hover,
+.social-link-icon:focus {
+    cursor: pointer;
+    background-color: var(--blue-color);
+    fill: var(--section-backghround-color);
+}
+
 /* Портфоліо */
 
-/**/
 
 .body-page {
 
