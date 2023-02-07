@@ -26,6 +26,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    padding: 0px;
+    margin: 0px;
+}
 
 /* Свойства для корректного отображения картинок */
 img {
@@ -134,6 +138,7 @@ html {
     border-bottom: 1px solid #ECECEC;
 }
 
+
 /*Nav*/
 .nav {
     margin-left: 93px;
@@ -174,6 +179,14 @@ html {
 
 }
 
+.site-nav .nav-list-clients:hover {
+    color: var(--blue-color);
+}
+
+.site-nav .nav-list-client:hover {
+    color: var(--blue-color);
+}
+
 .site-nav .nav-list-client {
     font-family: 'Roboto';
     color: var(--primery-text-color);
@@ -189,14 +202,17 @@ html {
 .list-contacts {
     display: flex;
 
-    gap: 50px;
+    gap: 30px;
 
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 344px;
-    margin: auto;
+    margin-left: auto;
     padding: 0;
 
+}
+
+.list-contacts .contact-link:hover {
+    color: var(--blue-color);
 }
 
 /*mail-card*/
@@ -230,6 +246,12 @@ html {
 .image-number {
     margin-right: 10px;
     fill: var(--sekondary-text-color);
+}
+
+.image-number:hover,
+.image-number:focus {
+    fill: var(--blue-color);
+    cursor: pointer;
 }
 
 .contacts-link {
@@ -296,6 +318,9 @@ html {
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/Header_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -339,15 +364,23 @@ html {
 
 /* section */
 .section {
-
     padding-top: 94px;
     padding-bottom: 94px;
-
     font-family: 'Roboto';
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
 
+
+}
+
+.section-item {
+
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    background-color: var(--button-background-color);
 }
 
 .subtitle {
@@ -364,6 +397,18 @@ html {
 /* УВАГА ДО ДЕТАЛЕЙ */
 
 /*subject*/
+
+.one-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--secondary-backghround-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+}
+
 .subject {
     display: flex;
 
@@ -405,6 +450,18 @@ html {
 }
 
 /* ПУНКТУАЛЬНІСТЬ */
+
+.two-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--secondary-backghround-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+}
+
 .headline {
     font-family: 'Roboto';
     font-weight: 700;
@@ -422,6 +479,18 @@ html {
 }
 
 /* ПЛАНУВАННЯ */
+
+.three-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--secondary-backghround-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+}
+
 .headline {
     font-family: 'Roboto';
     font-weight: 700;
@@ -439,6 +508,18 @@ html {
 }
 
 /* СУЧАСНІ ТЕХНОЛОГІЇ */
+
+.four-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--secondary-backghround-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+}
+
 .headline {
     font-family: 'Roboto';
     font-weight: 700;
@@ -456,6 +537,16 @@ html {
 }
 
 /* Чим ми займаємося */
+
+.section-slogan {
+    padding-bottom: 94px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+
+}
 
 /* зоображення*/
 
@@ -493,6 +584,9 @@ html {
 .section-leader {
     text-align: center;
     margin-left: 30px;
+    background-color: var(--section-backghround-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
 }
 
@@ -534,7 +628,7 @@ html {
 
 .socials-list {
     display: flex;
-
+    justify-content: center;
 }
 
 .socials-link {
@@ -577,19 +671,18 @@ html {
     margin-bottom: 0px;
     display: flex;
     justify-content: center;
-    padding-bottom: 94px;
+
+}
+
+.section-thumb {
+    padding: 94px 0px;
 }
 
 .thumb:hover,
 .thumb:focus {
-    cursor: pointer;
-    fill: var(--section-backghround-color);
     border: 1px solid var(--blue-color);
 }
 
-.brend-icon:hover {
-    fill: var(--blue-color);
-}
 
 .thumb:first-child {
     margin-left: 0px;
@@ -597,27 +690,34 @@ html {
 
 .thumb {
     margin-left: 30px;
-    border: 1px solid var(--feature-list-icon);
     border-radius: 4px;
+
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
-    background: var(--page-color);
+    border: 1px solid var(--feature-list-icon);
+    color: var(--feature-list-icon);
 }
 
-.thumb:hover {
-    fill: var(--blue-color);
-}
-
-.thumbnail:hover,
-.thumbnail:focus {
-    fill: var(--blue-color);
-
+.thumbnails:hover,
+.thumbnails:focus {
+    color: var(--blue-color);
+    border: var(--blue-color);
 }
 
 .thumbnail {
-    margin: 16px 32px;
-    fill: var(--feature-list-icon);
+    fill: currentColor;
+
 }
+
+
+
+
 
 
 /* підвал*/
@@ -690,6 +790,7 @@ html {
 }
 
 .media {
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -697,6 +798,7 @@ html {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .social-list {
@@ -756,6 +858,9 @@ html {
     top: 32px;
 }
 
+.nav-studio:hover {
+    color: var(--blue-color);
+}
 
 .nav-list-client {
 
@@ -792,6 +897,9 @@ html {
 .section-btn .section-button :hover,
 .section-btn .section-button :focus {
     cursor: pointer;
+    background-color: var(--blue-color);
+    color: var(--button-background-color);
+    border-radius: 4px;
 }
 
 .button {
@@ -879,9 +987,7 @@ html {
 
 /* параграф */
 .aside {
-
-    margin: 0;
-
+    margin-top: 4px;
     color: var(--sekondary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -911,8 +1017,6 @@ html {
     flex-wrap: wrap;
     padding-left: 0;
     gap: 30px;
-
-
 }
 
 .flex-elements {
@@ -922,6 +1026,14 @@ html {
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
+}
+
+.flex-elements:hover,
+.flex-elements:focus {
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Заголовок */
