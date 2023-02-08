@@ -898,13 +898,13 @@ html {
 }
 
 /* Курсор */
-.section-btn .section-button :hover,
+/* .section-btn .section-button :hover,
 .section-btn .section-button :focus {
     cursor: pointer;
     background-color: var(--blue-color);
     color: var(--button-background-color);
     border-radius: 4px;
-}
+} */
 
 .button {
 
@@ -919,7 +919,13 @@ html {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+}
 
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    background-color: var(--blue-color);
+    color: var(--button-background-color);
 }
 
 .btn {
@@ -938,6 +944,13 @@ html {
     top: 174px;
 }
 
+.btn:hover,
+.btn:focus {
+    cursor: pointer;
+    background-color: var(--blue-color);
+    color: var(--button-background-color);
+}
+
 .control {
     margin-left: 8px;
     border: 1px solid transparent;
@@ -952,6 +965,13 @@ html {
     line-height: 1.62;
     letter-spacing: 0.03em;
     top: 174px;
+}
+
+.control:hover,
+.control:focus {
+    cursor: pointer;
+    background-color: var(--blue-color);
+    color: var(--button-background-color);
 }
 
 .dropdown {
@@ -970,6 +990,13 @@ html {
     top: 174px;
 }
 
+.dropdown:hover,
+.dropdown:focus {
+    cursor: pointer;
+    background-color: var(--blue-color);
+    color: var(--button-background-color);
+}
+
 .type-btn {
     margin-left: 8px;
     border: 1px solid transparent;
@@ -986,7 +1013,12 @@ html {
     top: 174px;
 }
 
-
+.type-btn:hover,
+.type-btn:focus {
+    cursor: pointer;
+    background-color: var(--blue-color);
+    color: var(--button-background-color);
+}
 
 
 /* параграф */
