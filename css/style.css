@@ -891,6 +891,7 @@ html {
     display: flex;
     justify-content: center;
 
+    gap: 8px;
     margin-top: 0;
     margin-bottom: 50px;
     padding-left: 0;
@@ -898,16 +899,9 @@ html {
 }
 
 /* Курсор */
-/* .section-btn .section-button :hover,
-.section-btn .section-button :focus {
-    cursor: pointer;
-    background-color: var(--blue-color);
-    color: var(--button-background-color);
-    border-radius: 4px;
-} */
 
 .button {
-
+    gap: 8px;
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 6px 25px;
@@ -928,8 +922,7 @@ html {
     color: var(--button-background-color);
 }
 
-.btn {
-    margin-left: 8px;
+.portfolio-button {
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 6px 22px;
@@ -944,82 +937,12 @@ html {
     top: 174px;
 }
 
-.btn:hover,
-.btn:focus {
+.portfolio-button:hover,
+.portfolio-button:focus {
     cursor: pointer;
     background-color: var(--blue-color);
     color: var(--button-background-color);
 }
-
-.control {
-    margin-left: 8px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 6px 22px;
-
-    font-family: 'Roboto';
-    color: var(--primery-text-color);
-    background: var(--button-background-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    top: 174px;
-}
-
-.control:hover,
-.control:focus {
-    cursor: pointer;
-    background-color: var(--blue-color);
-    color: var(--button-background-color);
-}
-
-.dropdown {
-    margin-left: 8px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 6px 22px;
-
-    font-family: 'Roboto';
-    color: var(--primery-text-color);
-    background: var(--button-background-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    top: 174px;
-}
-
-.dropdown:hover,
-.dropdown:focus {
-    cursor: pointer;
-    background-color: var(--blue-color);
-    color: var(--button-background-color);
-}
-
-.type-btn {
-    margin-left: 8px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 6px 22px;
-
-    font-family: 'Roboto';
-    color: var(--primery-text-color);
-    background: var(--button-background-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    top: 174px;
-}
-
-.type-btn:hover,
-.type-btn:focus {
-    cursor: pointer;
-    background-color: var(--blue-color);
-    color: var(--button-background-color);
-}
-
 
 /* параграф */
 .aside {
